@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    font-family: "Cairo", sans-serif;
 }
 
 body {
@@ -25,10 +26,27 @@ div {
 
 }
 
+.nav-links {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.nav-links ul {
+    list-style: none;
+}
+
 .social-button {
     width: 50px;
 }
 
+.nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    padding: 20px: 20px;
+}
 
 
 /*
