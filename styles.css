@@ -62,6 +62,10 @@ a:active {
     float: right;
 }
 
+.right-item-container {
+    width: 100%;
+}
+
 .port-container {
     overflow: auto;
 }
@@ -138,7 +142,7 @@ a:active {
     display:block;
 }
 
-#Home {
+#Home div {
     display: flex;
     align-items: center;
     justify-content: center;
