@@ -40,7 +40,7 @@ a {
 }
 
 li a:hover {
-    font-size: 1.7rem;
+    font-size: 1.9vw;
     transition: 0.3s;
 }
 
@@ -124,6 +124,7 @@ a:hover span {
 .port-item {
     width: 45%;
     margin: 2.5%;
+    padding: 2%;
     float: left;
     border: solid 1px rgb(60, 60, 60);
     background-color: rgba(240, 200, 150, 0.5);
@@ -132,13 +133,15 @@ a:hover span {
 
 .port-item img {
     width: 90%;
-    margin: 5%;
+    margin-top: 15px;
+
 }
 
 .port-item-hidden {
     width: 100%;
     height: 100%;
     margin: 0%;
+    padding: 15px;
     float: left;
     border: solid 1px orange;
     background-color: rgba(240, 200, 150, 0.95);
@@ -147,10 +150,18 @@ a:hover span {
     left:0;
     color: rgb(140, 140, 140);
     display: none;
+    transition: 0.3s;
 }
 
 .port-item:hover .port-item-hidden{
     display:block;
+}
+
+.port-item-hidden p {
+    margin-top: 30px;
+    font-size: 1.3vw;
+    width: 90%;
+    margin: 30px 5% 10px 5%;
 }
 
 #Home div {
