@@ -67,6 +67,7 @@ a:hover span {
     background-color: rgb(240, 200, 150, 0.25);
     border: 1px solid rgba(64, 61, 65, 0.67);
     position: fixed;
+    top:0
 }
 
 .right-container {
@@ -176,12 +177,14 @@ a:hover span {
 }
 
 .nav-menu-mobile {
-    width: 10%;
+    width: 20%;
     border: 1px green solid;
+    padding: 0;
 }
 
 .nav-menu-mobile img {
     width: 100%;
+    margin: 0;
 }
 
 .logo-container-mobile {
@@ -194,13 +197,19 @@ a:hover span {
 }
 
 .social-buttons-mobile {
-    width: 15%;
+    width: 20%;
     border: 1px solid orange;
 }
 
 .social-button-mobile {
     width: 25%;
     margin: 3%;
+}
+
+.contact {
+    padding: 5vw 2vw;
+    display: none;
+    background-color: rgb(240, 200, 150, 0.8);
 }
 
 @media screen and (max-width:600px) {
@@ -211,6 +220,10 @@ a:hover span {
         border: 1px solid red;
     }
 
+    .right-item {
+        min-height: 85vh;
+    }
+
     .left-container {
         width: 100%;
         height: 10vh;
@@ -219,6 +232,8 @@ a:hover span {
         position: sticky;
         top: 0;
         overflow: auto;
+        z-index: 100;
+        background-color: rgb(240, 200, 150, 1)
     }
 
     .nav-desktop {
@@ -230,6 +245,9 @@ a:hover span {
         justify-content: space-between;
         align-items: center;
         }
+
+    .contact {
+        display:block;
     }
 }
 
