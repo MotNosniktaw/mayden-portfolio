@@ -7,9 +7,13 @@ body {
     background-image: url('img/guitar-blur.jpeg');
     background-position: center;
     background-attachment: fixed;
-    font-size:62.5%;
+    font-size: 62.5%;
     text-align: center;
     color: rgb(240, 240, 210);
+}
+
+html{
+    scroll-behavior: smooth;
 }
 
 h1 {
