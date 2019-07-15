@@ -5,10 +5,11 @@
 
 body {
     background-image: url('img/guitar-blur.jpeg');
-    background-position: right;
+    background-position: center;
     background-attachment: fixed;
     font-size:62.5%;
     text-align: center;
+    color: rgb(240, 240, 240);
 }
 
 h1 {
@@ -27,14 +28,30 @@ p {
     font-size: 1rem;
 }
 
+li {
+    padding: 5px;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(240, 240, 240);
+}
+
+li a:hover {
+    font-size: 1.7rem;
+}
+
+a:active {
+}
+
 .logo {
-    height: 50px;
+    height: 100px;
 }
 .left-container {
     float: left;
     width: 20%;
     height: 100vh;
-    background-color: rgb(240, 240, 240, 0.5);
+    background-color: rgb(240, 240, 240, 0.3);
     border: 1px solid red;
     position: fixed;
 }
@@ -48,9 +65,19 @@ p {
     overflow: auto;
 }
 
+.logo-container {
+    padding: 10px;
+}
+
+.social-buttons {
+    padding: 10px;
+    font-size: 1rem;
+    color: rgb(200,200,200)
+}
+
 .right-item {
     background-color: rgba(230, 230, 230, 0.3);
-    border: 1px solid blue;
+    border: 1px solid rgb(160, 160, 160);
     min-height: 95vh;
     margin: 2.5vh;
 }
@@ -61,10 +88,12 @@ p {
 
 .nav-links ul {
     list-style: none;
+    padding: 0;
 }
 
 .social-button {
-    width: 50px;
+    width: 70px;
+    padding: 10px;
 }
 
 .nav {
@@ -82,12 +111,38 @@ p {
     float: left;
     border: solid 1px orange;
     background-color: rgba(230, 230, 230, 0.5);
+    position:relative;
 }
 
 .port-item img {
     width: 90%;
     margin: 5%;
 }
+
+.port-item-hidden {
+    width: 100%;
+    height: 100%;
+    margin: 0%;
+    float: left;
+    border: solid 1px orange;
+    background-color: rgba(230, 230, 230, 0.95);
+    position: absolute;
+    top:0;
+    left:0;
+    color: rgb(140, 140, 140);
+    display: none;
+}
+
+.port-item:hover .port-item-hidden{
+    display:block;
+}
+
+#Home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 /*
 font-family: 'Maven Pro', sans-serif;
 font-family: 'Barlow', sans-serif;
