@@ -8,10 +8,23 @@ body {
     background-position: right;
     background-attachment: fixed;
     font-size:62.5%;
+    text-align: center;
 }
 
-div {
+h1 {
+    font-size: 5rem;
+}
 
+h2 {
+    font-size: 3rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+p {
+    font-size: 1rem;
 }
 
 .logo {
@@ -35,8 +48,14 @@ div {
     overflow: auto;
 }
 
+.right-item {
+    background-color: rgba(230, 230, 230, 0.3);
+    border: 1px solid blue;
+    min-height: 95vh;
+    margin: 2.5vh;
+}
+
 .nav-links {
-    text-align: center;
     font-size: 1.5rem;
 }
 
@@ -57,18 +76,12 @@ div {
     padding: 20px: 20px;
 }
 
-.right-item {
-    background-color: rgba(230, 230, 230, 0.5);
-    border: 1px solid blue;
-    min-height: 95vh;
-    margin: 2.5vh;
-}
-
 .port-item {
     width: 45%;
     margin: 2.5%;
     float: left;
     border: solid 1px orange;
+    background-color: rgba(230, 230, 230, 0.5);
 }
 
 .port-item img {
