@@ -9,7 +9,7 @@ body {
     background-attachment: fixed;
     font-size:62.5%;
     text-align: center;
-    color: rgb(240, 240, 240);
+    color: rgb(240, 240, 220);
 }
 
 h1 {
@@ -45,14 +45,15 @@ a:active {
 }
 
 .logo {
-    height: 100px;
+    width: 50%;
 }
+
 .left-container {
     float: left;
     width: 20%;
     height: 100vh;
-    background-color: rgb(240, 240, 240, 0.3);
-    border: 1px solid red;
+    background-color: rgb(240, 200, 150, 0.25);
+    border: 1px solid rgba(64, 61, 65, 0.67);
     position: fixed;
 }
 
@@ -76,7 +77,7 @@ a:active {
 }
 
 .right-item {
-    background-color: rgba(230, 230, 230, 0.3);
+    background-color: rgba(240, 200, 150, 0.15);
     border: 1px solid rgb(160, 160, 160);
     min-height: 95vh;
     margin: 2.5vh;
@@ -109,8 +110,8 @@ a:active {
     width: 45%;
     margin: 2.5%;
     float: left;
-    border: solid 1px orange;
-    background-color: rgba(230, 230, 230, 0.5);
+    border: solid 1px rgb(60, 60, 60);
+    background-color: rgba(240, 200, 150, 0.5);
     position:relative;
 }
 
@@ -125,7 +126,7 @@ a:active {
     margin: 0%;
     float: left;
     border: solid 1px orange;
-    background-color: rgba(230, 230, 230, 0.95);
+    background-color: rgba(240, 200, 150, 0.95);
     position: absolute;
     top:0;
     left:0;
