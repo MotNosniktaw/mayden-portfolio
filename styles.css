@@ -36,6 +36,7 @@ li {
 a {
     text-decoration: none;
     color: rgb(240, 240, 210);
+    font-size: 1.7vw;
 }
 
 li a:hover {
@@ -57,7 +58,7 @@ a:hover span {
 
 .left-container {
     float: left;
-    width: 20%;
+    width: 15%;
     height: 100vh;
     background-color: rgb(240, 200, 150, 0.25);
     border: 1px solid rgba(64, 61, 65, 0.67);
@@ -65,7 +66,7 @@ a:hover span {
 }
 
 .right-container {
-    width: 80%;
+    width: 85%;
     float: right;
 }
 
@@ -85,7 +86,9 @@ a:hover span {
 .social-buttons {
     padding: 10px;
     font-size: 1rem;
-    color: rgb(200,200,200)
+    color: rgb(200,200,200);
+    width: 100%;
+    font-size: 1.1vw;
 }
 
 .right-item {
@@ -105,8 +108,8 @@ a:hover span {
 }
 
 .social-button {
-    width: 70px;
-    padding: 10px;
+    width: 30%;
+    padding: 3%;
 }
 
 .nav {
