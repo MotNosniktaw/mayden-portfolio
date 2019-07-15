@@ -9,7 +9,7 @@ body {
     background-attachment: fixed;
     font-size:62.5%;
     text-align: center;
-    color: rgb(240, 240, 220);
+    color: rgb(240, 240, 210);
 }
 
 h1 {
@@ -30,18 +30,25 @@ p {
 
 li {
     padding: 5px;
+    height: 40px;
 }
 
 a {
     text-decoration: none;
-    color: rgb(240, 240, 240);
+    color: rgb(240, 240, 210);
 }
 
 li a:hover {
     font-size: 1.7rem;
+    transition: 0.3s;
 }
 
-a:active {
+a span {
+    display:none;
+}
+
+a:hover span {
+    display:inline;
 }
 
 .logo {
