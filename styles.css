@@ -64,6 +64,7 @@ a:active {
 
 .right-item-container {
     width: 100%;
+    border: 1px solid transparent;
 }
 
 .port-container {
