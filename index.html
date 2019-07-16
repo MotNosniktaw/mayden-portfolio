@@ -8,8 +8,8 @@
     <link href="https://fonts.googleapis.com/css?family=Barlow|Cairo|Catamaran|Maven+Pro|Rajdhani&display=swap" rel="stylesheet">
     <title>T-Dawg</title>
 </head>
-<body>
-    <div id="Top" class="left-container">
+<body id="Top">
+    <div class="left-container">
         <div class="nav-desktop">
             <div class="logo-container">
                 <img class="logo" src="img/logo-c.png">
@@ -18,7 +18,7 @@
                 <ul>
                     <li><a href="#Home"><span> - </span>Home<span> - </span></a></li>
                     <li><a href="#About"><span> - </span>About Me<span> - </span></a></li>
-                    <li><a href="#Portfolio"><span> - </span>Portfolio<span> - </span></a></li>
+                    <li><a href="#portfolio"><span> - </span>Portfolio<span> - </span></a></li>
                     <li><a href="#Other"><span> - </span>Other Stuff<span> - </span></a></li>
                 </ul>
             </div>
@@ -31,9 +31,12 @@
                     email = e@mail.address</span>
             </div>
         </div>
+        <input type="checkbox" id="nav-check">
         <div class="nav-mobile">
             <div class="nav-menu-mobile">
-                <img src="img/menu-button.png">
+                <label for="nav-check">
+                    <img src="img/menu-button.png">
+                </label>
             </div>
             <div class="logo-container-mobile">
                 <a href="#Top"><img class="logo-mobile" src="img/logo-b.png"></a>
@@ -42,6 +45,13 @@
                 <a href="https://twitter.com"><img class="social-button-mobile" src="img/twitter-button.png"></a>
                 <a href="https://github.com"><img class="social-button-mobile" src="img/github-button.svg"></a>
                 <a href="https://linkedin.com"><img class="social-button-mobile" src="img/linkedin-button.png"></a>
+            </div>
+        </div>
+        <div class="nav-mobile-bottom">
+            <div class="nav-links-mobile">
+                <a href="#About">About Me</a>
+                <a href="#portfolio">Portfolio</a>
+                <a href="#Other">Other Stuff</a>
             </div>
         </div>
     </div>
@@ -64,7 +74,7 @@
                 </h3>
                 <p>
                     Howdy! I'm Tom!<br>
-                    I am a Trainee Developer at the Mayden Academy. I am from Southampton in the UK but currently based in Bath.<br>
+                    I am a Trainee Developer at the Mayden Academy. I am from Southampton in the UK and currently based in Bath.<br>
 
                 </p>
                 <h3>
@@ -83,7 +93,7 @@
             </div>
             </div>
         </div>
-        <div id="Portfolio" class="right-item-container">
+        <div id="portfolio" class="right-item-container">
             <div class="right-item port-container">
             <h2>
                 Portfolio

@@ -7,14 +7,16 @@ body {
     background-image: url('img/guitar-blur.jpeg');
     background-position: center;
     background-attachment: fixed;
+    top:0;
     font-size: 62.5%;
     text-align: center;
     color: rgb(240, 240, 210);
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
+/* add conditional CSS for different*/
 
 h1 {
     font-size: 5vw;
@@ -52,6 +54,7 @@ a {
 li a:hover {
     font-size: 1.9vw;
     -o-transition: 0.3s;
+    -webkit-transition: 0.3s;
     transition: 0.3s;
 }
 
@@ -82,10 +85,10 @@ a:hover span {
     float: left;
     width: 15%;
     height: 100vh;
-    background-color: rgb(240, 200, 150, 0.25);
+    background-color: rgba(240, 200, 150, 0.25);
     border: 1px solid rgba(64, 61, 65, 0.67);
     position: fixed;
-    top:0
+    top:0;
 }
 
 .right-container {
@@ -112,6 +115,9 @@ a:hover span {
     color: rgb(200,200,200);
     width: 100%;
     font-size: 1.1vw;
+    position : absolute;
+    bottom: 2vh;
+    left: 0%;
 }
 
 .right-item {
@@ -127,15 +133,6 @@ a:hover span {
 }
 
 .nav-desktop {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -ms-flex-align: center;
-    align-items: center;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
     height: 100%;
     padding: 20px;
 }
@@ -169,6 +166,7 @@ a:hover span {
     color: rgb(140, 140, 140);
     display: none;
     -o-transition: 0.3s;
+    -webkit-transition: 0.3s;
     transition: 0.3s;
 }
 
@@ -183,14 +181,9 @@ a:hover span {
     margin: 30px 5% 10px 5%;
 }
 
-#Home div {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-align: center;
-    align-items: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+#Home h1 {
+    height: 70%;
+    margin: 15% 0;
 }
 
 .nav-mobile {
@@ -229,7 +222,7 @@ a:hover span {
 .contact {
     padding: 2vw 2vw;
     display: none;
-    background-color: rgb(131, 105, 56, 0.8);
+    background-color: rgba(131, 105, 56, 0.8);
 }
 
 .contact p {
@@ -250,6 +243,47 @@ a:hover span {
     height: 10vh;
 }
 
+.nav-mobile-bottom {
+    display:none;
+    height: 5vh;
+    border: solid 1px rgb(50, 50, 50);
+    background-color: rgb(131, 105, 56);
+/*
+    transition-duration: 0.3s;
+    transition-timing-function: cubic-bezier(0, 0.65, 1, 1);
+ */
+}
+
+#nav-check:checked ~ .nav-mobile-bottom {
+    display: block;
+}
+
+.nav-links {
+    margin: 10vh auto;
+}
+
+.nav-links-mobile {
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-links-mobile a {
+     font-size: 1.3rem;
+     width: 33%;
+    height: 100%;
+    padding: 1vh 0;
+ }
+
+.nav-links-mobile a:hover {
+    background-color: rgb(121, 95, 50);
+}
+
+#nav-check {
+    display: none;
+}
+
 @media screen and (max-width:600px) {
 
     .right-container {
@@ -267,10 +301,8 @@ a:hover span {
         float: none;
         position: -webkit-sticky;
         position: sticky;
-        top: 0;
-        overflow: auto;
         z-index: 100;
-        background-color: rgb(131, 105, 56)
+        background-color: rgb(131, 105, 56);
     }
 
     .nav-desktop {
