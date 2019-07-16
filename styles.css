@@ -1,6 +1,6 @@
 * {
     box-sizing: border-box;
-    font-family: "Cairo", sans-serif;
+    font-family: 'Catamaran', sans-serif;
 }
 
 body {
@@ -17,7 +17,7 @@ html{
 }
 
 h1 {
-    font-size: 5rem;
+    font-size: 5vw;
 }
 
 h2 {
@@ -35,6 +35,12 @@ p {
 li {
     padding: 5px;
     height: 40px;
+}
+
+ul {
+
+    list-style: none;
+    padding: 0;
 }
 
 a {
@@ -56,8 +62,19 @@ a:hover span {
     display:inline;
 }
 
+.about-container {
+    /*float: left;*/
+    margin: 0 10% 5% 10%;
+    width: 80%;
+    padding: 5px 20px;
+}
+
+.about-container p {
+    font-size: 1.4rem;
+}
+
 .logo {
-    width: 50%;
+    width: 80%;
 }
 
 .left-container {
@@ -85,7 +102,7 @@ a:hover span {
 }
 
 .logo-container {
-    padding: 10px;
+    padding: 1vw;
 }
 
 .social-buttons {
@@ -103,11 +120,6 @@ a:hover span {
     margin: 2.5vh;
 }
 
-.nav-links ul {
-    list-style: none;
-    padding: 0;
-}
-
 .social-button {
     width: 30%;
     padding: 3%;
@@ -119,7 +131,7 @@ a:hover span {
     align-items: center;
     justify-content: space-between;
     height: 100%;
-    padding: 20px: 20px;
+    padding: 20px;
 }
 
 .port-item {
@@ -174,21 +186,22 @@ a:hover span {
 .nav-mobile {
     display: none;
     height: 100%;
+    overflow: hidden;
 }
 
 .nav-menu-mobile {
-    width: 20%;
+    width: 15%;
     border: 1px green solid;
     padding: 0;
 }
 
 .nav-menu-mobile img {
-    width: 100%;
+    width: 80%;
     margin: 0;
 }
 
 .logo-container-mobile {
-    width: 30%;
+    width: 20%;
     border: 1px purple solid;
 }
 
@@ -207,9 +220,23 @@ a:hover span {
 }
 
 .contact {
-    padding: 5vw 2vw;
+    padding: 2vw 2vw;
     display: none;
-    background-color: rgb(240, 200, 150, 0.8);
+    background-color: rgb(240, 220, 160, 0.8);
+}
+
+.contact p {
+    margin: 0 auto;
+}
+
+#about-container-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.mobile-footer {
+    height: 10vh;
 }
 
 @media screen and (max-width:600px) {
@@ -233,7 +260,7 @@ a:hover span {
         top: 0;
         overflow: auto;
         z-index: 100;
-        background-color: rgb(240, 200, 150, 1)
+        background-color: rgb(240, 220, 160, 1)
     }
 
     .nav-desktop {
@@ -248,6 +275,14 @@ a:hover span {
 
     .contact {
         display:block;
+    }
+
+    .about-container p {
+        font-size: 1.1rem;
+    }
+
+    h1 {
+        font-size: 4rem;
     }
 }
 
