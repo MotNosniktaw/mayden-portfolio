@@ -2,7 +2,75 @@ body {
     background-image: url('img/guitar-blur.jpeg');
     background-position: right;
     background-attachment: fixed;
-    height: 100% vh;
+    top:0;
+    font-size: 62.5%;
+    text-align: center;
+    color: rgb(240, 240, 210);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+/* add conditional CSS for different*/
+
+h1 {
+    font-size: 5vw;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+p {
+    font-size: 1rem;
+}
+
+li {
+    padding: 5px;
+    height: 40px;
+}
+
+ul {
+
+    list-style: none;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(240, 240, 210);
+    font-size: 1.7vw;
+}
+
+li a:hover {
+    font-size: 1.9vw;
+    -o-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+a span {
+    display:none;
+}
+
+a:hover span {
+    display:inline;
+}
+
+.about-container {
+    /*float: left;*/
+    margin: 0 10% 5% 10%;
+    width: 80%;
+    padding: 5px 20px;
+}
+
+.about-container p {
+    font-size: 1.4rem;
+
 }
 
 div {
